@@ -17,7 +17,7 @@ fn get_image(dir: &str, scale: u32) {
                 let pix = img.get_pixel(x, y);
                 let mut intent = pix[0] / 3 + pix[1] / 3 + pix[2] / 3; // RGB value
                 if pix[3] == 0 {
-                    intent = 0
+                    intent = 0;
                 }
 
                 println!("{}", get_ascii(intent));
